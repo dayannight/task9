@@ -1,0 +1,324 @@
+html{
+    font-size: 625%;
+}
+
+.wrap{
+    line-height: .5rem;
+    color: white;
+    padding: 0 5%;
+    background-color: #1376dc;
+}
+.warp-btp{
+    float: right;
+}
+.login,.registered{
+    border: none;
+    border-left: white 1px solid;
+    outline: none;
+    padding: 0 1px 0 ;
+    background-color: #1376dc;
+}
+
+/*<!--以下是nav-->*/
+
+.index-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1rem;
+    background-color: #f9f9f9;
+    padding: 0 5%;
+}
+.log{
+    width: 1.62rem;
+    color: #1376dc;
+
+}
+.nav-log-sp1{
+    font-weight: bold;
+    font-size: .46rem;
+    font-family: 	KaiTi_GB2312;
+    display: block;
+    margin-bottom: -.1rem;
+    margin-top: -.1rem;
+
+}
+.nav-log-sp2{
+    display: block;
+}
+.nav-btp{
+    display: flex;
+    justify-content: space-between;
+    width:3.5rem;
+}
+.mav-bt{
+    height: .35rem;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 2px -1px;
+    border: none;
+    border-radius: 5%;
+}
+.mav-bt:hover{
+    background-color: #1376dc;
+    color: white;
+}
+/*以下是main*/
+main{
+    padding: 0 5%;
+}
+.color-gy{
+    color: #d4d4d4;
+}
+.color-c{
+    color: #ff840a;
+}
+.bgc-c{
+    background-color: #ff840a;
+}
+.bgc-gy{
+    background-color: #d4d4d4;
+}
+.color-w{
+    color: white;
+}
+/*进度条*/
+.index-navbar{
+    width: 100%;
+    height: 1rem;
+    padding-top: .15rem;
+}
+/*进度条nub1*/
+.index-navbar1{
+    height: auto;
+    width: auto;
+    float: right;
+}
+.navbarn1-nub{/*进度条上部分*/
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+.navbar-bar{
+    display: inline-block;
+    width: .32rem;
+    height: 3px;
+    border-radius: 1px;
+}
+.navbar-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: .15rem;
+    height: .15rem;
+    border-radius: 50%;
+    font-size: 10px;
+
+}
+.navbar-font{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+
+
+.content{
+    width: 100%;
+
+}
+/*以下是表单*/
+.main-form{
+    margin-top: .2rem;
+    border: 1px solid #cacaca;
+    height: auto;}
+.title{
+    line-height: .3rem;
+    background-color: #f4f4f4;
+    border-bottom:  1px solid #cacaca;
+    color: #1277dc;
+    font-weight: bold;
+}
+/*标题样式*/
+.titlesp1:before{
+    content:url("../img/box.png") ;
+    position: relative;
+    top: 2px;
+    margin: 0 6px;
+
+}
+.titlesp2:before{
+    content:url("../img/Cut.png") ;
+    position: relative;
+    top: 3px;
+    margin: 0 6px;
+}
+.titlesp3:before{
+
+    content:url("../img/Ruler.png") ;
+    position: relative;
+    top: 4px;
+    margin: 0 6px;
+}
+
+
+/*选择箱型*/
+.fm-selectbox{
+    position: relative;
+    height: .7rem;
+    border-bottom:  1px solid #cacaca;
+    display: flex;
+    align-items: center;
+    background-color: #fbfcff;
+
+}
+.lb1{
+    margin: 0 .2rem;
+}
+.lb2{
+    margin: 0 .15rem;
+}
+.fm-dropdown{
+    position: absolute;
+    top:50%;
+    right: .2rem;
+    margin-top: -.165rem;
+}
+
+/*确定尺寸*/
+.fm-sizebox{
+    position: relative;
+    height: 1.1rem;
+    border-bottom: 1px solid #cacaca;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fbfcff;
+
+}
+.fm-dropdown2{
+    position: absolute;
+    right: .2rem;
+}
+
+/*选择材质*/
+.fm-selectcaizhi{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    background-color: #fbfcff;
+}
+/*下一步按钮*/
+.bt-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+
+}
+.submit{
+    width: 1rem;
+    height: .3rem;
+    background-color: #cd494c;
+    color:white;
+    border-radius: 5%;
+    outline: none;
+    border: none;
+}
+
+/*select样式*/
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #d3d3d3;
+
+    /*很关键：将默认的select选择框样式清除*/
+    -moz-appearance:none;
+    -webkit-appearance: none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background:url("../img/juxing.png") no-repeat scroll right center transparent;
+    height: 33px;
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 24px;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+/*text输入框*/
+.inputtext{
+    width: .5rem;
+    margin-left: .05rem;
+}
+
+
+/*footer*/
+.index-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding: 0 5%;
+    background-color: #f9f9f9;
+    color: #929292;
+    font-weight: bold;
+}
+.ft-1,.ft-2{
+    height: 1.5rem;
+    padding-top: .5rem;
+}
+.ft-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 2.5rem;
+    padding-bottom: .28rem;
+}
+.ft-2-a{
+    font-size: 12px;
+    color: #929292;
+    flex-basis: 30%;
+}
+.ft-2-a:hover{
+    color: #1277dc;
+    text-decoration: none;
+}
+.ft-3{
+    display: flex;
+    align-items: center;
+
+}
+.ft-3-spgrp{
+    line-height: 26px;
+    height: 78px;
+}
+.ft-3 span{
+    font-size: 12px;
+    font-weight: unset;
+    display: block;
+}
+.qcimg{
+    width:92px;
+    height: 92px;
+}
+
+.foot-warp{
+    text-align: center;
+    line-height: .35rem;
+    color: white;
+    background-color: #1277dc;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
