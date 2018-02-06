@@ -28,6 +28,7 @@ html{
     height: 1rem;
     background-color: #f9f9f9;
     padding: 0 5%;
+    width: 100%;
 }
 .log{
     width: 1.62rem;
@@ -208,7 +209,7 @@ main{
     position: relative;
     display: flex;
     align-items: center;
-    height: 1rem;
+    height: .7rem;
     background-color: #fbfcff;
 }
 /*下一步按钮*/
@@ -275,13 +276,14 @@ select::-ms-expand { display: none; }
 .ft-2{
     display: flex;
     flex-wrap: wrap;
-    width: 2.5rem;
+    width: 2.2rem;
     padding-bottom: .28rem;
 }
 .ft-2-a{
     font-size: 12px;
     color: #929292;
     flex-basis: 30%;
+    padding-left: 5px;
 }
 .ft-2-a:hover{
     color: #1277dc;
@@ -290,7 +292,6 @@ select::-ms-expand { display: none; }
 .ft-3{
     display: flex;
     align-items: center;
-
 }
 .ft-3-spgrp{
     line-height: 26px;
@@ -313,9 +314,141 @@ select::-ms-expand { display: none; }
     background-color: #1277dc;
     font-size: 12px;
 }
+/*媒体查询*/
+@media all and (max-width:740px ){
+    .selectcaizhi{/*选择材质*/
+        height: auto;
+    }
+    .fm-selectcaizhi{
+       height: auto;
+        flex-wrap: wrap;
+        padding: .25rem 100px.25rem 0;
+    }
+    .fm-selectcaizhi .lb1{
+        height: .3rem;
+    }
+    .fm-selectcaizhi .lb1{
+        width: 75px;
+    }
+
+
+}
+@media all and (max-width: 621px){
+    .fm-sizebox{
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-start;
+        padding: .25rem 100px.25rem 15px;
+    }
+    .lb1{
+    }
+    .lb2{
+        margin: 2px 0;
+    }
+
+    .fm-selectbox1{
+        width:140px ;
+        display: flex;
+        flex-direction: column;
+    }
+    .fm-selectbox2{
+        width:140px ;
+        display: flex;
+        flex-direction: column;
+        margin-left: .1rem;
+    }
+    /*页脚*/
+    .index-footer{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .ft-1{
+        padding-top: .2rem;
+        height: .5rem;
+    }
+
+}
+.index-nav-media{
+    display: none;
+}
+@media all and (max-width: 560px){
+    /*nav样式*/
+    .index-nav-media{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 1rem;
+        background-color: #f9f9f9;
+        padding: 0 5%;
+        width: 100%;
+
+    }
+    .index-nav{
+        display: none;
+    }
+    .mav-bt1{
+        width: 100%;
+        background-color: white;
+        color: black;
+        box-shadow: 1px 1px 2px -1px;
+        border: none;
+        border-radius: 5%;
+        margin-bottom: 3px;
+    }
+    .nav-media-btn{
+        background-color: #1376dc;
+        border: none;
+        border-radius: 5%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        box-shadow: 1px 1px 2px 2px  #cacaca;
+
+    }
+
+}
+@media all and (max-width: 455px){
+    .fm-sizebox{/*确定尺寸*/
+        flex-direction: column;
+    }
+    .fm-selectbox2{
+        margin-left: 0;
+        margin-top: .2rem;
+    }
+
+    .fm-selectbox{
+        padding: 25px 100px 25px 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fm-selectbox .lb1{
+    margin-top: 2px;
+        margin-bottom: 2px;
+    }
 
 
 
+
+}
+
+@media all and (max-width: 370px){
+    .navbar-bar{
+        width: 20px;
+    }
+    .navbar-font{
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 300px){
+    main{
+        padding: 0 1%;
+    }
+}
+
+html{
+    min-width:248px;
+
+}
 
 
 
